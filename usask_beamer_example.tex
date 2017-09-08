@@ -1,0 +1,81 @@
+\documentclass[t]{beamer}
+\usepackage{lmodern} % Need to use this package for proper font encoding.
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+
+% Title slide information
+\title{A \LaTeX{} Beamer Theme for the University of Saskatchewan}
+\date{Important Conference, City, Country \\ September $26^{\text{th}}$, 2017} % Can use just for date, or add a line break for conference or event.
+\author{Author A. One and  \\ Author B. Two}
+\titlegraphic{UsaskAerial.jpg} % Photo placed on the title slide, you will need to provide a cropped photo to the correct height. Width is automatically set. Can use any graphics format that the "graphicx" package supports.
+\institute{Department of Something} % Can also use "University of Saskatchewan" here.
+\usetheme{usask}
+
+% Image sources from:
+% http://communications.usask.ca/templates-and-guides/templates.php#PowerPointtemplates
+
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Itemizing} 
+	\begin{itemize}
+	\item Item 1
+		\begin{itemize}
+		\item Sub-item 1
+		\end{itemize}
+	\item Item 2
+	\item Item 3
+	\end{itemize}
+
+	Text without itemize
+\end{frame}
+
+%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Enumerate and Figures} 
+
+	\begin{enumerate}
+	\item Number 1
+	\item Number 2
+	\item Number 3
+	\item Number 4
+	\end{enumerate}
+
+	Oh look, a figure!
+ 	\vskip1cm
+	\centering
+	\includegraphics[width=0.5\textwidth]{UsaskLogo.jpg}
+\end{frame}
+
+%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Mathematics}
+
+	With numbering
+	\begin{equation}
+	a^2 + b^2 = c^2
+	\end{equation}
+
+	Without numbering
+	\begin{equation*}
+	E = mc^2
+	\end{equation*}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%
+% Ending slide, perhaps this could be implemented in the theme some how
+\begin{frame}[c]
+	\begin{center}
+	\bfseries \huge \color{Headline}Questions?\\
+	\bfseries \Large \color{Date} Thank-you!
+	\end{center}
+\end{frame}
+
+\end{document}
